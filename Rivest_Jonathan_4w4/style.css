@@ -1488,6 +1488,12 @@ La barre du millieu
   padding-left: 4%;
 }
 
+@media (min-width: 1200px) {
+  .admin-rapid {
+    width: 50%;
+  }
+}
+
 /* local burger
 --------------------------------------------- */
 .galerie {

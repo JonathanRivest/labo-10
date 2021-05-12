@@ -16,6 +16,7 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+			
 				<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
@@ -58,11 +59,19 @@ get_header();
 				$precedent = $tPropriété['typeCours'];
 			endwhile;?>
 			</section> <!-- fin section cours -->
-			<section class="nouvelles">
+
+            <section class="admin-rapid">
+			<h3>Ajout d'article</h3>
+			<input type="text" name = "title" placeholder = "Titre">
+			<textarea name="content" placeholder="Contenu"></textarea>
+			<button id='bout-rapide'>Créer un article</button>
+			</section>
+			<section id="annonce"></section>
+			<!-- <section class="nouvelles">
 			<button id="bout_nouvelles">Dernières Nouvelles</button>
 			<section></section>
 
-			</section>
+			</section> -->
 		<?php endif; ?>
 
 
